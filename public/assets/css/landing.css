@@ -1,0 +1,53 @@
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: lightgrey; /* Change to your desired color */
+  transition: width 0.3s ease; /* Adjust timing as needed */
+}
+
+.animated-underline:hover::after,
+.animated-underline:focus::after {
+  width: 100%;
+}
+
+.disappearing-underline {
+  position: relative;
+}
+
+.disappearing-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Adjust thickness of underline */
+  background-color: lightgrey; /* Adjust color of underline */
+  animation: disappear 2s forwards;
+}
+
+@keyframes disappear {
+  0% {
+    width: 100%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 25%;
+  }
+  75% {
+    width: 5px; /* Adjust width of the dot */
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
