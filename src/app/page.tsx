@@ -10,12 +10,12 @@ import Collection from "@/components/Collection/Collection";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* <Header />
+      <Header />
       <main>
         <Landing />
         <Shop />
         <Collection />
-      </main> */}
+      </main>
       <Footer />
     </>
   );
