@@ -171,7 +171,7 @@ const Collection: React.FC = () => {
           }  gap-8 mt-28`}
         >
           <div
-            className={`relative row-span-2 col-span-2 bg-gray-200 mt-10 sm:mt-0`}
+            className={`relative row-span-2 col-span-2 bg-gray-200 mt-10 sm:mt-0 sm:mb-0 mb-8`}
           >
             <img
               src="https://pipeline-theme-fashion.myshopify.com/cdn/shop/files/web-210128-BW-PF21_S219259.jpg?v=1646112530&width=2000"

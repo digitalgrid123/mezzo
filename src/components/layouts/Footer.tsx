@@ -5,11 +5,11 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#424242] pl-16">
-      <div className="flex gap-10 justify-between">
+    <footer className="bg-[#424242] md:pl-16 md:pr-0  pl-8 pr-8">
+      <div className="flex gap-10 justify-between flex-col md:flex-row">
         <div className="flex flex-col ">
           <h1 className="text-6xl text-white font-thin pt-20">MEZZO</h1>
-          <div className="flex  justify-between gap-28 mt-4">
+          <div className="flex  justify-between gap-12 md:gap-28 mt-4 flex-col md:flex-row">
             <div>
               <ul>
                 <li className="text-white text-lg font-tenor p-1">
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="px-28 py-24 relative">
+          <div className="px-12 py-12 md:px-28 md:py-24 relative">
             <h5 className="text-base text-white">Our Weekly newsletter</h5>
             <h1 className="text-6xl text-white mt-2 font-thin">
               Skip to the details
